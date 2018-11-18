@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Choose_txt"></activity>
+        <activity android:name=".Choose_txt" />
+        <activity android:name=".Play"></activity>
     </application>
 
 </manifest>

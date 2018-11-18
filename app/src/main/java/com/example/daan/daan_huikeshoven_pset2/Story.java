@@ -67,6 +67,11 @@ public class Story implements Serializable {
         }
     }
 
+    /** returns the placeholders in the story */
+    public List<String> getPlaceholders() {
+        return placeholders;
+    }
+
     /** returns total number of placeholders in the story */
     public int getPlaceholderCount() {
         return placeholders.size();

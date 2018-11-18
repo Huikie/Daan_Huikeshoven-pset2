@@ -1,9 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Choose_txt">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/title_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Choose the text you want to play Mad Libs with:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/show_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="273dp"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        app:columnCount="1">
+
+        <Button
+            android:id="@+id/simple_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseText"
+            android:text="Simple Text" />
+
+        <Button
+            android:id="@+id/tarzan_text"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseText"
+            android:text="Tarzan Text" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseText"
+            android:text="Univeristy Text" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseText"
+            android:text="Clothes Text" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="chooseText"
+            android:text="Dance Text" />
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:onClick="goBack"
+        android:text="BACK"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="447dp" />
+</LinearLayout>
