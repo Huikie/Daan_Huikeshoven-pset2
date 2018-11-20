@@ -18,10 +18,6 @@ public class Choose_txt extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_txt);
     }
-    public void goBack(View view)
-    {
-        finish();
-    }
     public void chooseText(View view)
     {
         Intent intent = new Intent(Choose_txt.this, Play.class);

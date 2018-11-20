@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="12dp"
-        app:columnCount="1">
+        app:columnCount="2">
 
         <Button
             android:id="@+id/simple_text"
