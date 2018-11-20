@@ -28,7 +28,7 @@ public class Play extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
 
-        if (extras != null) {
+        if (extras != null && savedInstanceState == null) {
             if (extras.containsKey("simple_text")) {
                 InputStream is = getResources().openRawResource(R.raw.madlib0_simple);
                 text = new Story(is);
@@ -85,6 +85,16 @@ public class Play extends AppCompatActivity {
             }
 
         }
+        else{
+            text = (Story) savedInstanceState.getSerializable("text");
+            TextView type_info = findViewById(R.id.type_info);
+            String info = text.getNextPlaceholder();
+            type_info.append(info);
+
+            int rem = text.getPlaceholderRemainingCount();
+            TextView words_left = findViewById(R.id.rem_placeholders);
+            words_left.setText(rem + " word(s) left");
+        }
 
         Button fill = findViewById(R.id.fill_button);
         fill.setOnClickListener(new View.OnClickListener() {
@@ -107,6 +117,13 @@ public class Play extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+
+        super.onSaveInstanceState(outState); // always call super
+        outState.putSerializable("text", text);
     }
 
 }
