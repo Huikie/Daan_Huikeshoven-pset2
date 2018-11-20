@@ -5,42 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Play">
+    tools:context=".Mad_text">
 
     <TextView
-        android:id="@+id/play_title"
+        android:id="@+id/mad_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
         android:padding="12dp"
-        android:text="Fill in the words to complete the story!"
+        android:text="Your Mad Lib Story!"
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/rem_placeholders"
+        android:id="@+id/mad_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/type_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Please type a/an " />
+        android:layout_margin="8dp"
+        android:padding="12dp" />
 
     <Button
-        android:id="@+id/fill_button"
+        android:id="@+id/another_story"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:text="Fill" />
-
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:onClick="makeNewStory"
+        android:text="make another story" />
 </LinearLayout>

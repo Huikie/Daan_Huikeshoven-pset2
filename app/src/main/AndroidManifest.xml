@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Choose_txt" />
-        <activity android:name=".Play"></activity>
+        <activity android:name=".Play" />
+        <activity android:name=".Mad_text"></activity>
     </application>
 
 </manifest>
