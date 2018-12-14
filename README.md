@@ -8,6 +8,6 @@ With this app you can create “Mad Libs”. Mad Libs are short stories that hav
 ## Screenshots of the app
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/begin.png)
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/begin_lnd.png)
-![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/second_mad.png)
+![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/choose_txt.png)
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/choose_lnd.png)
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/mad_text.png)
