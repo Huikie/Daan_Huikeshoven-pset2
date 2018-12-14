@@ -3,6 +3,7 @@ package com.example.daan.daan_huikeshoven_pset2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,7 +17,7 @@ public class Mad_text extends AppCompatActivity {
         final Story retrieved_story = (Story) intent.getSerializableExtra("mad_text");
         String mad_text_string = retrieved_story.toString();
         TextView mad_text = findViewById(R.id.mad_text);
-        mad_text.setText(mad_text_string);
+        mad_text.setText(Html.fromHtml(mad_text_string));
     }
     public void makeNewStory(View view){
         Intent intent = new Intent(Mad_text.this, Choose_txt.class);

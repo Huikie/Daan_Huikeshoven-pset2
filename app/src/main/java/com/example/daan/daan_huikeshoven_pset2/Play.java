@@ -3,6 +3,7 @@ package com.example.daan.daan_huikeshoven_pset2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -101,7 +102,7 @@ public class Play extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText input = findViewById(R.id.editText);
-                text.fillInPlaceholder(input.getText().toString());
+                text.fillInPlaceholder("<b>" + input.getText().toString() + "</b>");
                 TextView type_info = findViewById(R.id.type_info);
                 type_info.setText("Please type a/an ");
                 String info = text.getNextPlaceholder();
