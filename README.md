@@ -14,4 +14,5 @@ This extra's are shown in the section "Screenshots of the app".
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/begin_lnd.png)
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/choose_txt.png)
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/choose_lnd.png)
+![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/third_mad.png)
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/mad_text.png)
