@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    // Method that directs the user from the begin page to the page where he/she can choose a text to play with.
+    /** Method that directs the user from the begin page to the page where he/she can choose a text to play with.*/
     public void buttonClick(View view)
     {
         Intent intent = new Intent(MainActivity.this, Choose_txt.class);

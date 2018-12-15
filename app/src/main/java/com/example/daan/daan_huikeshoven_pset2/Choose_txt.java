@@ -11,8 +11,8 @@ public class Choose_txt extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_txt);
     }
-    // Method that directs the user from the page where he/she chooses a text to the page where actually can be played.
-    // Also the text name that the user choose is put along when directing to the play activity.
+    /** Method that directs the user from the page where he/she chooses a text to the page where actually can be played.
+     * Also the text name that the user choose is put along when directing to the play activity.*/
     public void chooseText(View view)
     {
         Intent intent = new Intent(Choose_txt.this, Play.class);
