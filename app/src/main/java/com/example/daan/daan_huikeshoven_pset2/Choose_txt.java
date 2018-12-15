@@ -3,14 +3,7 @@ package com.example.daan.daan_huikeshoven_pset2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Choose_txt extends AppCompatActivity {
     @Override
@@ -18,6 +11,8 @@ public class Choose_txt extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_txt);
     }
+    // Method that directs the user from the page where he/she chooses a text to the page where actually can be played.
+    // Also the text name that the user choose is put along when directing to the play activity.
     public void chooseText(View view)
     {
         Intent intent = new Intent(Choose_txt.this, Play.class);

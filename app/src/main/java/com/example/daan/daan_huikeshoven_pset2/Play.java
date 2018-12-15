@@ -3,22 +3,12 @@ package com.example.daan.daan_huikeshoven_pset2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
-import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.io.InputStream;
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.List;
-
 public class Play extends AppCompatActivity {
     Story text;
 
