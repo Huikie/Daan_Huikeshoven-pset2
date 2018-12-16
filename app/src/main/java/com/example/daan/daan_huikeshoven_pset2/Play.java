@@ -98,8 +98,10 @@ public class Play extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 EditText input = findViewById(R.id.editText);
+
                 // Put <b></b> around the filled in placeholder to be able to make the filled in placeholder bold in the Mad_text activity.
                 text.fillInPlaceholder("<b>" + input.getText().toString() + "</b>");
+
                 TextView type_info = findViewById(R.id.type_info);
                 type_info.setText("Please type a/an ");
                 String info = text.getNextPlaceholder();
@@ -108,6 +110,7 @@ public class Play extends AppCompatActivity {
                 TextView words_left = findViewById(R.id.rem_placeholders);
                 words_left.setText("");
                 words_left.setText(rem + " word(s) left");
+
                 // If the whole text is filled in, put the created text to the activity where the text will be shown.
                 if(text.isFilledIn()){
                     Intent intent_next = new Intent(Play.this, Mad_text.class);
