@@ -8,7 +8,7 @@ With this app you can create “Mad Libs”. Mad Libs are short stories that hav
 - I made the words that are filled in by the user of the app bold, so the user can see which words he filled the story with.
 - I also made sure that game progress is saved when rotating the screen.
 
-This extra's are shown in the section "Screenshots of the app".
+This extra's are shown in the section "Screenshots of the app" (second image & fourth image) / (seventh image) / (sixth image).
 
 ## Screenshots of the app
 ![](https://github.com/Huikie/Daan_Huikeshoven-pset2/blob/master/doc/begin.png)
